@@ -1,0 +1,8 @@
+<resources>
+    <string name="password">Password</string>
+    <string name="emailid">Email id</string>
+    <string name="login">Login</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="android_id">Android Id : </string>
+
+</resources>

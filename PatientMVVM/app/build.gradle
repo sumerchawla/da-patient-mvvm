@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.doctoranywhere.patientmvvm"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+
+        debug {
+            pseudoLocalesEnabled true
+            buildConfigField "String", "BASE_URL", '"https://jsonplaceholder.com/"'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_URL", '"https://jsonplaceholder.com/"'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    sourceSets {
+        main.res.srcDirs = ["src/main/res","src/main/res-by-feature"]
+        main {
+            file("src/main/res-by-feature")
+                    .listFiles()
+                    .each { res.srcDirs += it.path }
+        }
+        debug.assets.srcDirs = ["src/debug/assets/"]
+        release.assets.srcDirs = ["src/release/assets/"]
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    def networkDependencies = rootProject.ext.networkDependencies
+    def googleDependency = rootProject.ext.googleDependency
+    def androidSupportDependency = rootProject.ext.androidSupportDependency
+
+    // KOTLIN
+    implementation androidSupportDependency.kotlinStdLib
+    implementation androidSupportDependency.appcompatx
+    implementation androidSupportDependency.googleMaterial
+    implementation androidSupportDependency.ktx
+    implementation androidSupportDependency.constraintLayout
+
+    // OkHttp
+    implementation networkDependencies.okhttp
+    implementation networkDependencies.okhttpLogging
+    // Gson
+    implementation networkDependencies.gson
+    implementation networkDependencies.retrofitGsonConverter
+    implementation networkDependencies.rxRetrofitAdapter
+
+    //Navigation
+    implementation androidSupportDependency.navigationFragment
+    implementation androidSupportDependency.navigationUi
+
+    //Dagger
+    implementation googleDependency.daggerAndroid
+    implementation googleDependency.dagger
+    implementation googleDependency.daggerSupport
+    kapt googleDependency.daggerProcessor
+    kapt googleDependency.daggerCompiler
+
+    //Viewmodel And LiveData LifeCycle
+    implementation androidSupportDependency.lifecycleExt
+    implementation androidSupportDependency.lifecycleVersion
+
+}

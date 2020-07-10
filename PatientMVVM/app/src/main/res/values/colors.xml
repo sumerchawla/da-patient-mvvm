@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8adbd4</color>
+    <color name="transparentPrimary">#968adbd4</color>
+    <color name="tealLightPlan">#4c8adbd4</color>
+    <color name="colorTextfield">#afe5e0</color>
+    <color name="colorPrimaryDark">#8adbd4</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorTextDefault">#FFFFFF</color>
+    <color name="colorTextDefaultOpacity70">#70ffffff</color>
+    <color name="navigationBar">#F5F5F5</color>
+    <color name="colorCard">#220101</color>
+    <color name="fsp_dialog_background">#8C000000</color>
+    <color name="error_state_red">#A94442</color>
+    <color name="credit_card_blue">#1565bf</color>
+    <color name="chat_background_color">#f8f9fb</color>
+    <color name="light_gray_background">#eff0f2</color>
+    <color name="dark_text">#343434</color>
+    <color name="dark_text_40">#66343434</color>
+    <color name="dark_text_70">#70343434</color>
+    <color name="primary_text">#8adbd4</color>
+    <color name="missed">#f3b127</color>
+    <color name="cancelled">#f95151</color>
+    <color name="rejected">#9047d6</color>
+    <color name="text_color_black">#2f2f2f</color>
+    <color name="transparent_text_color_black">#502f2f2f</color>
+    <color name="dart_text_50_op">#50343434</color>
+    <color name="grey_background">#f5f5f5</color>
+    <color name="red_background">#f95151</color>
+    <color name="tnc_note_background">#0a4461</color>
+    <color name="transparent">#00000000</color>
+    <color name="sky_blue_tag">#8adbd4</color>
+    <color name="grey_color_tag">#a7a7a7</color>
+    <color name="non_active_dot_color">#bebebe</color>
+    <color name="text_hint">#6eabab</color>
+    <color name="da_notif">#8adbd4</color>
+    <color name="membership_detail_header_color">#343434</color>
+    <color name="translucent">#80000000</color>
+    <color name="qr_scan_info_bg_dark">#7cd2cb</color>
+    <color name="cigna_h_c_general">#0982c6</color>
+    <color name="ic_axa_logo">#060b95</color>
+    <color name="ic_ge_logo">#ff0006</color>
+    <color name="ic_tokio_marine_logo">#0096a9</color>
+
+</resources>
