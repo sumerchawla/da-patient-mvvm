@@ -1,4 +1,4 @@
-package com.allpoint.services.retrofitclient;
+package com.doctoranywhere.patientmvvm.services.retrofitclient;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

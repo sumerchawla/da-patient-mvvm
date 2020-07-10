@@ -1,7 +1,6 @@
 package com.doctoranywhere.patientmvvm.services.retrofitclient
 
 import android.content.Context
-import com.allpoint.services.retrofitclient.InternetHelper
 import com.doctoranywhere.patientmvvm.services.ApiResponseCallBack
 import com.doctoranywhere.patientmvvm.services.model.response.auth.AuthTokenResponse
 import com.doctoranywhere.patientmvvm.utils.Constants

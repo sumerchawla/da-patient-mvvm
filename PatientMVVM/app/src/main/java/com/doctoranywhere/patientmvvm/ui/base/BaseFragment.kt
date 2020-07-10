@@ -12,7 +12,6 @@ import androidx.databinding.ViewDataBinding
 import com.doctoranywhere.patientmvvm.R
 import dagger.android.support.AndroidSupportInjection
 import dagger.android.support.DaggerFragment
-import kotlinx.android.synthetic.main.activity_main.view.*
 
 abstract class BaseFragment<T : ViewDataBinding, V : BaseViewModel<*>> : DaggerFragment() {
 

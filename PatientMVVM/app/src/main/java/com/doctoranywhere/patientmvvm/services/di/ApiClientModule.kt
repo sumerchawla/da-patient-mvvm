@@ -1,7 +1,7 @@
 package com.doctoranywhere.patientmvvm.services.di
 
 import android.content.Context
-import com.allpoint.services.retrofitclient.*
+import com.doctoranywhere.patientmvvm.services.retrofitclient.InternetHelper
 import com.doctoranywhere.patientmvvm.services.retrofitclient.RetrofitClient
 import com.doctoranywhere.patientmvvm.services.retrofitclient.RetrofitApiInterface
 import dagger.Module
